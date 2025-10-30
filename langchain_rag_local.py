@@ -32,8 +32,7 @@ class LlamaAPILLM(BaseLLM):
     api_key: str
     model: str = "Llama-4-Maverick-17B-128E-Instruct-FP8"
     temperature: float = 0.7
-    max_tokens: int = 512
-    
+
     def _call(
         self,
         prompt: str,

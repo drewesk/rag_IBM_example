@@ -1,10 +1,10 @@
 # LangChain RAG System with Local Embeddings + Llama API
 
-This project implements a cost-effective Retrieval Augmented Generation (RAG) system using LangChain with local embeddings and Llama API to answer questions about IBM products and technologies.
+This project implements a Retrieval Augmented Generation (RAG) system using LangChain with local embeddings and Meta-Llama API to answer questions about IBM products and technologies.
 
 ## Key Features
 
-- **Local Embeddings**: Uses HuggingFace embeddings locally (no API cost)
+- **Local Embeddings**: Uses HuggingFace embeddings locally
 - **Llama API**: Only LLM calls go to external API
 - **Cost-Effective**: Reduces API costs by processing embeddings locally
 - **Vector Database**: Stores embeddings in Chroma vector database
@@ -63,10 +63,3 @@ python langchain_rag_local.py
 - `requirements.txt` - Python dependencies
 - `.env.example` - Template for environment variables
 - `README.md` - This file
-
-## Notes
-
-- The first run will take longer as it downloads and processes all the web content
-- Vector embeddings are stored locally in the `chroma` directory
-- You can modify the URLs in the script to add or remove content sources
-- Local embeddings reduce API costs significantly
